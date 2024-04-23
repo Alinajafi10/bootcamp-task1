@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color-primary: #234894;
+    --color-secondary: #AFCEDD;
+    --color-text: #1E1E1E;
+    --white: #FFFFFF;
+    --color-btn: #219F95;
+    --color-text-secondary: #696969;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    display: grid;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.requests {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+}
+
+.btn {
+    border-radius: 8px;
+    background-color: var(--color-btn);
+    color: var(--white);
+    border: none;
+    padding: 2rem 1.5rem;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-primary);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.request-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.text-small {
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+}
+
+.title p {
+    color: var(--color-primary);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.blue-text {
+    color: var(--color-primary);
+}
+
+.stick-div {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.block {
+    padding: 4rem 2rem;
+}
